@@ -54,7 +54,7 @@ public class Main {
 
             System.out.printf("%.2f %c %.2f = %.2f\n", n1, operacao, n2, resultado);
 
-            try (FileWriter writer = new FileWriter("teste.txt", true)){
+            try (FileWriter writer = new FileWriter("historico.txt", true)){
                 String linhaEscrita = String.format("-OPERACAO-\n" +
                         "%.2f %c %.2f = %.2f\n", n1, operacao, n2, resultado);
                 writer.write(linhaEscrita);
